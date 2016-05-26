@@ -284,11 +284,8 @@ $(function(){
 	createjs.Ticker.setFPS(combo.FPS);
 
 	// 模拟广播触发道具事件
-	$(window).on('keydown', function(e){
+	$('.send').click(function(e){
 
-		if( e.keyCode != 83 ) return;
-		// Test
-		// 随机选取一种样式
 		var r = Math.round(Math.random()*10);
 		if( r < 1 ) r = 1;
 		if( r > 8 ) r -= 8;
@@ -629,13 +626,13 @@ $(function(){
 	}
 
 	/**
-	 * Time Trace Graph
+	 * Time Trace Graph ( only for test )
 	 * For animation
 	 * default trace area size: 300 * 300
 	 **/
 
 	// var traceStage = new createjs.Stage('timeTrace'),
- // 		traceAreaSize = 300;
+ 	// 		traceAreaSize = 300;
 
 	// function timeTrace(x,y) {
 	// 	var g = new createjs.Graphics();
