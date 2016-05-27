@@ -257,6 +257,8 @@ combo.createShapeCross = function(optCross) {
 	return shape;
 };
 
+//	以下两个函数用于计算中文字符长度
+
 combo.textEllipsis = function(str) {
 	for(var i = j = 0, newStr = '', len = str.length; i < len; i++) {
 		if( encodeURI(str[i]).length > 8 ) {

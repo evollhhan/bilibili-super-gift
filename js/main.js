@@ -1,3 +1,4 @@
+// TODO: Haven't translated to English yet
 // combo Class
 // 连击效果类
 this.combo = this.combo || {};
@@ -281,7 +282,7 @@ $(function(){
 	
 	var stage = new createjs.Stage('giftArea');  // 舞台初始化
 
-	createjs.Ticker.setFPS(combo.FPS);
+	createjs.Ticker.setFPS(combo.FPS);			 //	设定帧率
 
 	// 模拟广播触发道具事件
 	$('.send').click(function(e){
